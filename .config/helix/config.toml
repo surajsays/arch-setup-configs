@@ -1,0 +1,41 @@
+# theme = "hex_lavender"
+#theme = "base16_transparent"
+theme ="curzon"
+[editor.soft-wrap]
+enable = true
+
+
+
+
+
+
+[keys.insert]
+
+"C-[" = "normal_mode"
+"C-b" = "normal_mode"  # Use Ctrl+b to switch to normal mode
+
+"C-s" = ":w" #save the file in insert mode 
+"C-q"=":q"
+"C-t"=":theme hex_lavender"
+"C-c"=":sh kitty"
+"C-n"=":config-reload"
+"C-f" = ":sh kitty --detach yazi"
+
+
+[keys.normal]
+C-g = [":new",":insert-output lazygit",":buffer-close",":redraw"]
+"C-]" = "normal_mode"
+"C-r" = ":sh ~/.config/helix/scripts/run_project.sh "
+ 
+
+[editor]
+clipboard-provider = "x-clip"
+
+
+
+#you can delete this just an experiment
+[keys.select]
+
+"C-[" = "normal_mode"
+
+
