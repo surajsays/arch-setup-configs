@@ -3,8 +3,8 @@
 # Kill any existing polybar instance
 killall -q polybar
 
-# Wait until polybar has shut down
+# # Wait until polybar has shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-# Launch bar
-polybar suraj &
+# Launch polybar
+polybar example -c ~/.config/polybar/themes/Gloom-Oned-Theme/polybar/config.ini
