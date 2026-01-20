@@ -1,0 +1,31 @@
+# ~/.config/alacritty/alacritty.toml
+
+[window]
+opacity = 0.84   # 1.0 = opaque, 0.0 = fully transparent
+
+[font]
+size = 11.0
+
+[font.normal]
+family = "Fira Code"
+style = "Regular"
+
+[font.bold]
+family = "Fira Code"
+style = "Bold"
+
+[font.italic]
+family = "Fira Code"
+style = "Italic"
+
+[font.bold_italic]
+family = "Fira Code"
+style = "Bold Italic"
+
+
+
+
+[colors.primary]
+#background = "#2e3440"
+background = "#1F1F27"  
+foreground = "#cdcecf"  

@@ -7,17 +7,11 @@ DIR="$HOME/Pictures/Wallpapers"
 WALLPAPERS=(
 w3.png
 peace.jpg
-green-hill.jpg
-wall4.png
 sunflower.png
 w1.png
-wall3.png
-night.png
-wall2.png
-hills.jpg
 w2.png
-nezuko-kamado.png
-wall1.png   
+wallhaven-382541.jpg
+daniel-leone-185834.jpg
 )
 
 # Show list in rofi

@@ -104,6 +104,12 @@ bindsym $mod+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
+for_window [floating] move position center, resize set 900 600
+#for_window [class="Pavucontrol"] floating enable, resize set 600 400, move position center
+for_window [floating] move position center
+for_window [class="Alacritty"] floating enable
+  
+
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
@@ -204,8 +210,9 @@ bindsym $mod+r mode "resize"
 
 
 # Display Wallpaper
-exec_always feh --bg-scale $HOME/Pictures/Wallpapers/w1.png
+exec_always feh --bg-scale $HOME/Pictures/Wallpapers/w3.png
 bindsym $mod+Ctrl+w exec ~/.config/polybar/scripts/change_wall.sh
+bindsym $mod+Shift+w exec ~/.config/polybar/scripts/wallpaper_picker.sh
 
 
 bindsym $mod+Shift+e exec ~/.config/polybar/powermenu.sh
@@ -249,7 +256,9 @@ bindsym $mod+Shift+plus gaps inner current plus 5
 bindsym $mod+Shift+minus gaps inner current minus 5
 
 # Toggle gaps
-bindsym $mod+Shift+g gaps outer current set 0
+bindsym $mod+Shift+g move scratchpad
+bindsym $mod+g scratchpad show
+
 
 # ===========================================================
 
@@ -311,4 +320,31 @@ client.urgent           #ff0000  #ff0000   #ffffff #ff0000   #ff0000
 
 # new_window pixel 20
 # new_float  pixel 20
+for_window [class=".*"] border pixel 2
+for_window [floating] border pixel 4
 
+
+
+
+
+# Year Progress widget – workspace 1 only
+for_window [title="Year Progress"] floating enable
+for_window [title="Year Progress"] border pixel 4
+for_window [title="Year Progress"] focus disable
+for_window [title="Year Progress"] move position 20 px 300 px
+for_window [title="Year Progress"] move to workspace 1
+for_window [title="Year Progress"] sticky disable
+for_window [workspace="1"] floating enable
+exec_always --no-startup-id ~/.config/polybar/scripts/s4.py
+
+
+
+
+
+# Countdown Timer widget – workspace 1 only
+for_window [title="Countdown Timer"] floating enable
+for_window [title="Countdown Timer"] border pixel 4
+for_window [title="Countdown Timer"] focus disable
+for_window [title="Countdown Timer"] move position 400 px 300 px
+for_window [title="Countdown Timer"] move to workspace 1
+for_window [title="Countdown Timer"] sticky disable
