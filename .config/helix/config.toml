@@ -1,6 +1,6 @@
 # theme = "hex_lavender"
 #theme = "base16_transparent"
-theme ="curzon"
+theme ="curzon"    
 [editor.soft-wrap]
 enable = true
 
@@ -10,32 +10,27 @@ enable = true
 
 
 [keys.insert]
-
+"C-;"="normal_mode"
+"C-'"="normal_mode"
 "C-[" = "normal_mode"
 "C-b" = "normal_mode"  # Use Ctrl+b to switch to normal mode
-
-"C-s" = ":w" #save the file in insert mode 
-"C-q"=":q"
-"C-t"=":theme hex_lavender"
-"C-c"=":sh kitty"
+"C-l"="normal_mode"
+"C-s" = ":w" 
+"C-q"=":q"  
+"C-c"=":theme hex_lavender" 
+"C-a"=":sh alacritty"   
+"C-t"=":sh  kitty --detach "    # opens new terminal in curret location 
 "C-n"=":config-reload"
-"C-f" = ":sh kitty --detach yazi"
-
+"C-f" = ":sh kitty --detach yazi"  #open yazi in current location 
+# "C-z"= ":sh firefox https://surajsays.com/"    
 
 [keys.normal]
-C-g = [":new",":insert-output lazygit",":buffer-close",":redraw"]
-"C-]" = "normal_mode"
+
+"C-l"=":reload"
+ C-g = [":new",":insert-output lazygit",":buffer-close",":redraw"]
+# "C-m"=":sh amberol &"
 "C-r" = ":sh ~/.config/helix/scripts/run_project.sh "
- 
+"C-t" = ":sh kitty --detach"
 
 [editor]
 clipboard-provider = "x-clip"
-
-
-
-#you can delete this just an experiment
-[keys.select]
-
-"C-[" = "normal_mode"
-
-

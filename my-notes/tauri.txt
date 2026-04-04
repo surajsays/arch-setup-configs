@@ -1,0 +1,108 @@
+
+
+
+sudo pacman -Syu
+sudo pacman -S --needed \
+  webkit2gtk-4.1 \
+  base-devel \
+  curl \
+  wget \
+  file \
+  openssl \
+  appmenu-gtk-module \
+  libappindicator-gtk3 \
+  librsvg \
+  xdotool
+
+
+
+cargo install tauri-cli --locked
+cargo install tauri-cli --version "^2"
+ cargo install cargo-ndk
+cargo install create-tauri-app
+
+npm run tauri android dev
+cargo tauri dev
+
+
+
+cargo install create-tauri-app --locked
+
+
+
+cargo create-tauri-app
+
+cargo tauri dev
+
+
+cargo tauri android init
+
+rustup target add aarch64-linux-android armv7-linux-androideabi i686-linux-android x86_64-linux-android
+
+
+
+
+
+
+rustup target add x86_64-linux-android
+rustup target add i686-linux-android
+rustup target add armv7-linux-androideabi
+rustup target add aarch64-linux-android
+
+
+
+npm run tauri android dev
+cargo tauri dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cargo tauri android dev --open
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cargo tauri android dev --open

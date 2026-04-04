@@ -59,7 +59,7 @@ sudo pacman -S zip unzip p7zip tar
 # Nerd Fonts symbols (required for icons in terminals, editors, status bars)
 sudo pacman -S ttf-nerd-fonts-symbols
 sudo pacman -S krita krita-plugin-gmic
-
+sudo pacman -S pass gnupg
 
 
 ## fonts --

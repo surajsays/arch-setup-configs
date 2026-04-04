@@ -1,5 +1,5 @@
 //@theme "/home/.config/rofi/themes/everforest.rasi"
-@theme "$HOME/.config/rofi/themes/squared-nord.rasi"
+@theme "/themes/squared-nord.rasi"
 
 * {
     bg4: #2D353BAA;

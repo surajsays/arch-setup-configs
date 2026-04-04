@@ -1,0 +1,57 @@
+cat commands information and uses
+	cat filename.txt
+	this prints content of this file in terminal just for quick overview
+
+	cat file1.txt file2.txt file3.txt
+	This outputs all three files in sequence.
+
+	cat file1.txt file2.txt > combined.txt
+	This creates a new file containing the contents of both source files
+
+	cat -n filename.txt
+	The -n flag adds line numbers to each line.
+
+	practicle example
+	Combine a header file, data file, and footer file into a complete document:
+	cat header.txt data.txt footer.txt > final_document.txt
+		
+	cat package.json | grep mdsvex
+	syntax to check if this "mdsvex" keysword exist in the file
+	helpful to check if certain packages are installed or not 
+
+=========================================================================
+Tree
+
+Display Directory Structure
+	tree
+
+	view the structure of a particular folder
+	tree /path/to/directory
+
+
+	Limit Depth of Display
+
+	Show only a certain number of directory levels:
+
+	bash
+	tree -L 2
+
+	The -L flag limits the depth. Here, only 2 levels deep are shown. Useful for avoiding overwhelming output from deeply nested folders.
+
+
+	Show Only Directories (No Files)
+
+	Display folder structure without listing individual files:
+
+	bash
+	tree -d
+
+	This is cleaner when you only care about the folder organization, not every file.
+
+
+	tree -h   shows File Sizes
+	tree -I 'node_modules|*.log'    Exclude specific files or folders from the output 
+	tree -a   show hidden files
+	tree > directory_structure.txt   write the tree structure to a text file 
+	
+===================================================================================
