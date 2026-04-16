@@ -41,7 +41,7 @@ sudo pacman -S cronie ,  //no need to install if you do not want to schedule tas
 
 
  ----required packages 
-sudo pacman -S zenity
+//sudo pacman -S zenity not required 
 sudo pacman -S mpv
 sudo pacman -S mpv-mpris
 sudo pacman -S yt-dlp
