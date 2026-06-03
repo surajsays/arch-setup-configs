@@ -8,6 +8,35 @@
 
 
 
+
+
+
+
+#!/bin/bash
+
+# Check connection status
+# status=$(nmcli -t -f WIFI g)       # wifi enabled/disabled
+# connected=$(nmcli -t -f DEVICE,STATE d | grep wlan0 | cut -d: -f2)
+
+# if [[ "$status" == "enabled" ]]; then
+#     if [[ "$connected" == "connected" ]]; then
+#         # Wi-Fi ON & connected → Green
+#         echo "%{F#00FF00}%{F-}"
+#     else
+#         # Wi-Fi ON but not connected → Yellow
+#         echo "%{F#FFFF00}%{F-}"
+#     fi
+# else
+#     # Wi-Fi OFF → Red
+#     echo "%{F#FF0000}%{F-}"
+# fi
+
+
+
+
+
+
+
 #!/bin/bash
 
 # Interface name (check with nmcli d)

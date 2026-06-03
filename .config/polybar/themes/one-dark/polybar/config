@@ -1,6 +1,8 @@
 [colors]
 rounds =            #2b2f37
-background =        #1e222a 
+background =        #1e222a
+
+
 background-alt =    #444
 foreground =        #dfdfdf
 foreground-alt =    #555
@@ -28,9 +30,9 @@ font-1 = JetBrainsMono Nerd Font:size=19;5
 font-2 = Material Design Icons:style=Bold:size=15;3
 font-3 = unifont:fontformat=truetype:size=13:antialias=true;
 
-modules-left =      date      xworkspaces xwindow
+modules-left =      date      xworkspaces xwindow 
 modules-center =    
-modules-right =  playerctl   round-left pulseaudio round-right memory cpu  powermenu  wlan
+modules-right =  playerctl   round-left pulseaudio round-right  memory cpu  powermenu  wlan
 
 tray-position = right
 tray-padding = 1
@@ -54,6 +56,12 @@ label-empty = ""
 ;label-empty-foreground = ${color.blue-light}
 label-empty-padding = 2
 
+[module/notify_icon]
+type = custom/script
+exec = ~/.config/polybar/scripts/polybar-notification-icon.sh
+interval = 3
+click-left = dunstctl history-pop
+click-right = dunstctl close-all
 
 
 
@@ -88,7 +96,8 @@ label-unmounted-foreground = ${colors.foreground-alt}
 [module/xworkspaces]
 type = internal/xworkspaces
 label-active = %name%
-label-active-underline= ${colors.primary}
+label-active-underline= #c678dd
+
 label-active-padding = 1
 label-occupied = %name%
 label-occupied-padding = 1
@@ -196,8 +205,10 @@ type = internal/cpu
 interval = 2
 format-prefix = "󰘚 "
 format-padding = 1
-format-prefix-foreground = #fca2aa
-format-foreground = #fca2aa
+format-prefix-foreground = #acd7ff
+
+format-foreground = #acd7ff
+
 ;format-underline = #f90000
 label = %percentage:2%%
 
@@ -401,7 +412,8 @@ type = custom/text
 content = " "
 content-padding = 1
 content-background = ${colors.background}
-content-foreground = #BF616A
+content-foreground = #c678dd
+
 click-left = ~/.config/polybar/powermenu.sh
 click-right = ~/.config/polybar/scripts/night-toggle.sh
 format-underline = #704214
