@@ -106,3 +106,21 @@ cargo tauri android dev --open
 
 
 cargo tauri android dev --open
+
+Android (Signed APK):
+cargo tauri android build --apk
+Linux:
+cargo tauri build
+cargo tauri android build --aab
+Output will be at src-tauri/gen/android/app/build/outputs/bundle/release/app-release.aab
+
+
+
+
+
+1. Build only for your CPU architecture (my phone uses arm64-v8a):
+      cargo tauri android build --apk --target aarch64
+   
+2. Split per ABI (generates separate APKs for each architecture, not just universal):
+      cargo tauri android build --apk --split-per-abi
+      This will output individual APKs for each target in separate files, and you just install the app-arm64-v8a-release.apk.

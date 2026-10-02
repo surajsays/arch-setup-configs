@@ -5,7 +5,8 @@ sudo pacman -Scc
 sudo pacman -Syy //to upgrade system 
 
 
-
+sudo pacman -Syy //just sync the repos whithout upgrading
+sudo pacman -S yt-dlp
 
 
 ========================================================================
